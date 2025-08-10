@@ -3,10 +3,86 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Calculadora 3D</title>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
+    <h1>Calculador precio de venta</h1>
+    <div>
+      <button id="mayorista">Precio mayorista</button>
+      <button id="minorista">Precio minorista</button>
+      <button id="descuento">Precio minorista con descuento</button>
+    </div>
+
+    <div id="fomMayorista">
+      <form id="formMay">
+        <p>
+          <label for="tiempo">Tiempo de impresion: </label>
+          <input type="text" id="time" required />
+        </p>
+        <p>
+          <label for="peso">Peso de filamento: </label>
+          <input type="text" id="cantidad" required />
+        </p>
+        <p>
+          <label for="costo">Precio filamento:</label>
+          <input type="text" id="precio" required />
+        </p>
+        <p>
+          <label for="insumos">Costo insumos:</label>
+          <input type="text" id="insumo" required />
+        </p>
+
+        <button type="submit" id="btnCalcular">Calcular</button>
+      </form>
+    </div>
+
+    <div id="fomMinorista">
+      <form id="formMin">
+        <p>
+          <label for="tiempo">Tiempo de impresion: </label>
+          <input type="text" id="time" required />
+        </p>
+        <p>
+          <label for="peso">Peso de filamento: </label>
+          <input type="text" id="cantidad" required />
+        </p>
+        <p>
+          <label for="costo">Precio filamento:</label>
+          <input type="text" id="precio" required />
+        </p>
+        <p>
+          <label for="insumos">Costo insumos:</label>
+          <input type="text" id="insumo" required />
+        </p>
+
+        <button type="submit" id="btnCalcular">Calcular</button>
+      </form>
+    </div>
+
+    <div id="fomDesceunto">
+      <form id="formDesc">
+        <p>
+          <label for="tiempo">Tiempo de impresion: </label>
+          <input type="text" id="time" required />
+        </p>
+        <p>
+          <label for="peso">Peso de filamento: </label>
+          <input type="text" id="cantidad" required />
+        </p>
+        <p>
+          <label for="costo">Precio filamento:</label>
+          <input type="text" id="precio" required />
+        </p>
+        <p>
+          <label for="insumos">Costo insumos:</label>
+          <input type="text" id="insumo" required />
+        </p>
+
+        <button type="submit" id="btnCalcular">Calcular</button>
+      </form>
+    </div>
+
     <script src="./main.js"></script>
   </body>
 </html>
